@@ -1,0 +1,25 @@
+
+import java.util.Scanner;
+
+public class TestaPessoa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner in = new Scanner(System.in);
+		
+		Aluno a = new Aluno();
+		Professor p = new Professor();
+		Funcionario f = new Funcionario();
+		
+		
+		System.out.println("Quantas copias deseja:");
+		
+		
+		a.tirarCopias(in.nextInt());
+		
+		
+		
+	}
+
+}

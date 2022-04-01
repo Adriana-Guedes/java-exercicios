@@ -1,0 +1,27 @@
+
+
+
+
+import java.util.Scanner; 
+
+public class EntradaRobusta {
+   public static void main (String [] args) {
+	   Scanner ze = new Scanner (System.in);
+	   boolean erro = true;
+	   int idade=0;
+	   do {
+		   try {
+			   System.out.print("Entre idade..: ");
+			   idade = ze.nextInt();
+			   erro = false;
+		   }
+		   catch(Exception e) {
+			   System.out.println("Idade inválida... tente novamente");
+			   erro = true;
+			   ze.nextLine();
+		   }
+	   } while (erro);
+	   
+	   System.out.print("Sua idade..: "+idade);
+   }
+}

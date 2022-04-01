@@ -1,0 +1,50 @@
+
+import java.util.Scanner;
+
+public class TestaPessoa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner in = new Scanner(System.in);
+		
+		Aluno a = new Aluno("Alice", "45729", "12/12/20", "95457" );
+		Professor p = new Professor("Alice", "45729", "12/12/20", 200.00, "Matematica" );
+		Funcionario f = new Funcionario("Alice", "45729", "12/12/20", 200.00, "20/05/1989", "Faxineiro");
+		
+		int pessoa;
+		
+		System.out.println("Quantas copias deseja:");
+		
+		
+		System.out.println(" "
+				+ "Você é :" 
+				+ "1 - Aluno" 
+				+ "2 - Professor"
+				+ "3 - Funcionario" 
+				+ "4 - Divisão\n\n" 
+				+ "Qual das operações acima você deseja:");
+				pessoa = in.nextInt();	
+								
+				while(pessoa <= 0 || pessoa > 5 )
+				{
+					System.out.printf(" "
+							+ "Você é :" 
+							+ "1 - Aluno" 
+							+ "2 - Professor"
+							+ "3 - Funcionario" 
+							+ "4 - Divisão\n\n" 
+							+ "Qual das operações acima você deseja:");
+							pessoa = in.nextInt();	
+							
+							
+		a.tirarCopias(in.nextInt());
+		
+		
+		p.tirarCopias(in.nextInt());
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+
+public class Aluno extends Pessoa {
+	//ATRIBUTO
+	String matricula;
+	
+	
+	//CONTRUTOR DA CLASSE
+	public Aluno(String matricula) {
+		this.matricula = matricula;
+		
+		
+	}
+	//CONSTRUTOR HERANÇA
+	public Aluno(String nome, String cpf, String dataNascimento, String matricula) {
+		super(nome, cpf, dataNascimento);
+		this.matricula = matricula;
+	}
+	
+
+	}
